@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You, Friends!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .heart {
+            color: #e74c3c;
+            font-size: 2em;
+            display: inline-block;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            margin: 0 10px;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .message {
+            color: #555;
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 30px 0;
+        }
+
+        .highlight {
+            color: #764ba2;
+            font-weight: 600;
+        }
+
+        .signature {
+            margin-top: 40px;
+            font-style: italic;
+            color: #888;
+            font-size: 1.1em;
+        }
+
+        .decorative {
+            margin: 30px 0;
+            font-size: 2em;
+            color: #667eea;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You<span class="heart">❤️</span></h1>
+        <div class="decorative">✨</div>
+        <p class="message">
+            To all my <span class="highlight">amazing friends</span>,<br><br>
+            I wanted to take a moment to express my deepest gratitude. Your friendship, support, and kindness mean the world to me. Thank you for being there through the good times and the challenging ones.<br><br>
+            You make life brighter, more meaningful, and full of joy. I'm truly blessed to have you in my life.
+        </p>
+        <div class="decorative">💫</div>
+        <p class="signature">With love and appreciation</p>
+    </div>
+</body>
+</html>
